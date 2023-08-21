@@ -1,6 +1,6 @@
-# Frontend Mentor - QR code component solution
+# Frontend Mentor - Results summary component solution
 
-This is a solution to the [QR code component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/qr-code-component-iux_sIO_H). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+This is a solution to the [Results summary component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/results-summary-component-CE_K6s0maV). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
 
 ## Table of contents
 
@@ -14,13 +14,14 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 
 
 
+
 ### Screenshot
 
-![](./screen-shot/Qr-code.PNG)
+![](./screen-shot/result.PNG)
 
 ### Links
 
-- Live Site URL: [live site URL](https://qr-code-app-frontendmentor.netlify.app/)
+- Live Site URL: [live site URL](https://result-component-frontend-mentor.netlify.app/)
 
 
 ### Built with
@@ -31,16 +32,16 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 ### What I learned
 
 Use this section to recap over some of your major learnings while working through this project.
-media querys is not only used for responsive design but also used for printing and more so it's an important concept in css
+color gradients and responsive design using flex
 
 ```css
-@media only screen and (max-width: 375px) {
-    .container {
-        height: 90vh;
-        width: 80%;
-        margin-left: 10%;
-        margin-top: 5%;
-    }
+back-ground: linear-gradient(to bottom right, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+```
+```css
+main.result{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 ```
 
