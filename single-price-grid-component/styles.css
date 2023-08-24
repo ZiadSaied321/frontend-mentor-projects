@@ -1,0 +1,148 @@
+/* import Karla color from google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&family=Outfit:wght@400;700&display=swap');
+
+/* start of global variables */
+:root {
+    --clr-cyan: #2BB3B1;
+    --clr-cyan-light:#4ABEBD;
+    --clr-yellow-light: hsl(71, 73%, 54%);
+    --clr-gray-light: hsl(204, 43%, 93%);
+    --clr-grayish-blue: hsl(218, 22%, 67%);
+
+}
+
+/* end of global variables */
+/* stat of global rules */
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: "Karla", serif;
+    font-size: 16px;
+}
+
+body {
+    background-color: var(--clr-gray-light);
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+h2 {
+    font-weight: 400;
+    font-size: 1.2rem;
+}
+
+h1,
+h2 {
+    text-transform: capitalize;
+    padding: 0.5rem 0;
+}
+
+.container {
+    background-color: teal;
+    width: 90vw;
+    margin: 5vh auto;
+    border:none;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    display: grid;
+}
+
+article {
+    width: 100%;
+    padding: 1rem 1.8rem;
+    background-color: #fff;
+}
+
+
+@media screen and (min-width:376px) {
+    h1 {
+        font-weight: 700;
+        font-size: 3rem;
+    }
+
+    h2 {
+        font-weight: 400;
+        font-size: 2.4rem;
+    }
+}
+
+/* end of the global rules */
+/* start of join us styles */
+.join-us .head {
+    color: var(--clr-cyan);
+}
+
+.join-us .sub-head {
+    color: var(--clr-yellow-light);
+    padding-bottom: 0.5rem;
+}
+
+.join-us .join-text {
+    color: var(--clr-grayish-blue);
+}
+
+/* start of join us styles */
+/* monthly subscription styles */
+.subscription{
+    background-color: var(--clr-cyan); 
+    padding-bottom: 2rem;
+}
+.subscription-head{
+    color: #fff;
+} 
+.subscription-info, .clr-white{
+    color: var(--clr-gray-light);
+    margin: 0.3rem 0;
+}
+.subscription-info span{
+    color: #fff;
+    font-size: 2rem;
+    display: inline-block;
+    margin-right: 0.25rem;
+}
+.cta{
+    width: 100%;
+    margin-top: 1rem;
+    padding: 0.750rem 0;
+    border-radius: 0.5rem;
+    border: none;
+    background-color: var(--clr-yellow-light);
+    color: #fff;
+    margin-bottom: 3rem;
+}
+
+/* end monthly subscription styles */
+/* why us styles */
+.why-us{
+    color: var(--clr-gray-light);
+    background-color: var(--clr-cyan-light);
+}
+.why-us-head{
+    color: #fff;
+}
+/* why us styles */
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+@media screen and (min-width:870px) {
+    .container{
+        width: 60vw;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 50% 50%;
+    }
+    .join-us{
+        grid-column: 1/span 2;
+    }
+}
+@media screen and (min-width:376px) {
+    
+}
