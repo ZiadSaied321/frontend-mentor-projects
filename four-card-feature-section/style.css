@@ -1,0 +1,125 @@
+/* import google font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+/* start of global variables */
+:root {
+    --clr-cyan: hsl(180, 62%, 55%);
+    --clr-red:hsl(0, 78%, 62%);
+    --clr-orange: hsl(34, 97%, 64%);
+    --clr-blue: hsl(212, 86%, 64%);
+    --dark-blue: hsl(234, 12%, 34%);
+    --grayish-blue: hsl(229, 6%, 66%);
+    --light-gray: hsl(0, 0%, 98%);
+}
+
+/* end of global variables */
+
+/* start of global rules */
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: "Poppins";
+    font-size: 15px;
+
+}
+body{
+    background-color: var(--light-gray);
+}
+.container{
+    margin: 5rem 3rem;
+}
+/* end of global rules */
+.header{
+    text-align: center;
+}
+.header h1{
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-bottom: 2rem;
+    color: var(--grayish-blue);
+}
+.header h1 span{
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--dark-blue);
+}
+.header p{
+    color: var(--grayish-blue);
+}
+.card{
+    margin-top: 2rem;
+    border-radius: 0.25rem;
+    padding: 1rem;
+    background-color: #fff;
+    position: relative;
+    box-shadow: 2px 2px 4px 0 var(--grayish-blue);
+}
+.card h2{
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: var(--dark-blue);
+}
+.card p{
+    margin-bottom: 6rem;
+    color: var(--grayish-blue);
+}
+.card span{
+    position: absolute;
+    right: 1rem;
+    bottom: 1rem;
+}
+.supervisor{
+    border-top: 0.30rem solid var(--clr-cyan);
+}
+.team-builder{
+    border-top: 0.30rem solid var(--clr-red);
+}
+.karma{
+    border-top: 0.30rem solid var(--clr-orange);
+}
+.calculator{
+    border-top: 0.30rem solid var(--clr-blue);
+}
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media screen and (min-width:576px) {
+    .container{
+        display:grid;
+        grid-template: 1fr 1fr 1fr 1fr / 1fr 1fr 1fr;
+        grid-template-areas: "header header header" 
+                            "supervisor team-builder calculator" 
+                            "supervisor Karma calculator" ;
+    gap:2rem;
+    align-items: center;
+    }
+    .header{
+        grid-area: header;
+    }
+    .supervisor{
+        grid-area:supervisor;
+        height: min-content;
+    }
+    .team-builder{
+        grid-area: team-builder;
+    }
+    .karma{
+        grid-area: Karma;
+    }
+    .calculator{
+        grid-area: calculator;
+        height: min-content;
+    }
+}
+@media screen and (min-width:1200px){
+    .container{
+        width: 1100;
+    }
+}
